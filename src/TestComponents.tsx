@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, {useState} from 'react';
 import SuperSelect from "./superComponents/SuperSelect";
 import SuperCheckbox from "./superComponents/SuperCheckBox";
 import SuperInput from "./superComponents/SuperInput";
@@ -9,7 +9,7 @@ export const TestComponents = () => {
     const options = ['A', 'B', 'C', 'D']
     const [state, setState] = useState('hi')
     const [check, setCheck] = useState(false)
-    console.log(check)
+
     const clickHandler = () => {
         setState("hi i'm button")
         setCheck(!check)
@@ -20,14 +20,14 @@ export const TestComponents = () => {
         setCheck(!check)
     }
     const checkedHandler = (value: boolean) => {
-setCheck(value)
+        setCheck(value)
     }
     return (
         <div>
             This is TestSuperComponents page
             <div>{state}</div>
             <SuperSelect value={state} options={options} onChangeOption={changeHandler}/>
-            <SuperCheckbox onChangeChecked={(value)=>checkedHandler(value)}/>
+            <SuperCheckbox onChangeChecked={(value) => checkedHandler(value)}/>
             <SuperInput onChangeText={changeHandler}/>
             <SuperRadio value={state} options={options} onChangeOption={(value) => changeHandler(value)}/>
             <div><SuperButton name='click' onClick={clickHandler}/></div>

@@ -1,5 +1,6 @@
 {
   "name": "my-app",
+  "homepage": " https://denisssska.github.io/homepage",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

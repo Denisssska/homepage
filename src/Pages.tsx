@@ -1,9 +1,9 @@
 import React from 'react'
 import {Navigate, Route, Routes} from "react-router-dom";
-import {Login} from "./Login";
-import {NewLogin} from "./NewLogin";
-import {Registration} from "./Registration";
-import {UpdateLogin} from "./UpdateLogin";
+import {Login} from "./login/Login";
+import {NewLogin} from "./login/NewLogin";
+import {Registration} from "./login/Registration";
+import {UpdateLogin} from "./login/UpdateLogin";
 import {TestComponents} from "./TestComponents";
 import {ErrorPage} from "./ErrorPage";
 

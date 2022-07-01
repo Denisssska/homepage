@@ -1,9 +1,9 @@
 import React from 'react';
 
-export const NewLogin = () => {
+export const Login = () => {
     return (
         <div>
-
+This is page login
         </div>
     );
 };

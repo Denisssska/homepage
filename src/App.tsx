@@ -1,11 +1,18 @@
 import React from 'react';
-import './App.css';
+import {HashRouter} from "react-router-dom";
+import Pages from "./Pages";
+import {Header} from "./Header";
 
-export function App() {
-  return (
-   <div>
+export const App = () => {
+    return (
+        <div>
+            <HashRouter>
 
-   </div>
-  );
+               <Header/>
+                <Pages/>
+            </HashRouter>
+
+        </div>
+    );
 }
 

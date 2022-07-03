@@ -10,6 +10,7 @@ export const Header=() =>{
                 <div><NavLink className={c.nav3} to='/newLogin'>newLogin</NavLink></div>
                 <div><NavLink className={c.nav3} to='/updateLogin'>updateLogin</NavLink></div>
                 <div><NavLink className={c.nav3} to='/testComponents'>testComponents</NavLink></div>
+                <div><NavLink className={c.nav3} to='/testUseForm'>testUseForm</NavLink></div>
             </div>
     )
 }

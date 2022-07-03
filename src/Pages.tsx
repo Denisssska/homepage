@@ -6,6 +6,7 @@ import {Registration} from "./login/Registration";
 import {UpdateLogin} from "./login/UpdateLogin";
 import {TestComponents} from "./TestComponents";
 import {ErrorPage} from "./ErrorPage";
+import TestUseForm from "./TestUseForm";
 
 
 export const PATH = {
@@ -14,7 +15,8 @@ export const PATH = {
     PROFILE: '/profile',
     TEST:'/testComponents',
     UPDATE_LOGIN:'/updateLogin',
-    NEW_LOGIN:'/newLogin'
+    NEW_LOGIN:'/newLogin',
+    TEST_USE_FORM:'testUseForm'
 
 }
 
@@ -39,6 +41,8 @@ function Pages() {
 
                 <Route path={'/testComponents/*'} element={<Navigate to={PATH.TEST}/>}/>
                 <Route path={PATH.TEST} element={<TestComponents/>}/>
+                <Route path={'/testUseForm/*'} element={<Navigate to={PATH.TEST_USE_FORM}/>}/>
+                <Route path={PATH.TEST_USE_FORM} element={<TestUseForm/>}/>
 
 
                 {/*он отрисуется если пользователь захочет попасть на несуществующую страницу*/}
